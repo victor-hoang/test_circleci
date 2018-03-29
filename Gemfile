@@ -41,6 +41,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rspec-rails', '~> 3.5'
   gem 'spring-commands-rspec'
+  gem 'rspec_junit_formatter'
 end
 
 group :development do
