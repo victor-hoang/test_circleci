@@ -71,8 +71,4 @@ jobs:
       - deploy:
           name: Deploy server
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              cap production deploy BRANCH=master
-            fi
-            echo ${CIRCLE_BRANCH}
-            echo ${param1}
+            cap {env} deploy BRANCH=${CIRCLE_BRANCH}
