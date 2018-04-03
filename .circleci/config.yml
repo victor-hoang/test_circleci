@@ -64,7 +64,7 @@ jobs:
       - store_artifacts:
           path: /tmp/test-results
           destination: test-results
-          
+
       # deployment
-      - deploy:
-        - run: cap production deploy BRANCH=master
+      #- deploy:
+      - run: cap production deploy BRANCH=master
