@@ -71,6 +71,6 @@ jobs:
       - deploy:
           name: Deploy Master to production
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master1" ]; then
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
               cap production deploy BRANCH=master
             fi
