@@ -71,4 +71,4 @@ jobs:
       - deploy:
           name: Deploy server
           command: |
-            cap {env} deploy BRANCH=${CIRCLE_BRANCH}
+            cap ${env} deploy BRANCH=${CIRCLE_BRANCH}
