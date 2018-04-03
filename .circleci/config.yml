@@ -75,3 +75,4 @@ jobs:
               cap production deploy BRANCH=master
             fi
             echo ${CIRCLE_BRANCH}
+            echo ${param1}
