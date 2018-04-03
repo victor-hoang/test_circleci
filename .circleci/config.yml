@@ -64,3 +64,13 @@ jobs:
       - store_artifacts:
           path: /tmp/test-results
           destination: test-results
+
+      deployment:
+        #staging:
+          #branch: staging
+          #commands:
+            #- bundle exec cap staging deploy
+        production:
+          branch: production
+          commands:
+            - bundle exec cap production deploy
