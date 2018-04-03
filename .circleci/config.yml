@@ -71,4 +71,7 @@ jobs:
       - deploy:
           name: Deploy server
           command: |
-            cap ${env} deploy BRANCH=${CIRCLE_BRANCH}
+            if [ "${env}" != "" ]; then
+              cap ${env} deploy BRANCH=${CIRCLE_BRANCH}
+            fi
+            
