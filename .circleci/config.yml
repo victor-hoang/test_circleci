@@ -66,11 +66,7 @@ jobs:
           destination: test-results
 
       deployment:
-        #staging:
-          #branch: staging
-          #commands:
-            #- bundle exec cap staging deploy
         production:
-          branch: production
+          branch: master
           commands:
             - bundle exec cap production deploy
