@@ -69,8 +69,8 @@ jobs:
       #- deploy:
       #- run: cap production deploy BRANCH=master
       - deploy:
-          name: Deploy Master to Heroku
+          name: Deploy Master to production
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            if [ "${CIRCLE_BRANCH}" == "master1" ]; then
               cap production deploy BRANCH=master
             fi
